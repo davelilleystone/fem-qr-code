@@ -4,11 +4,54 @@
   --dark-slate: hsl(218, 44%, 22%);
 }
 
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 body {
+  height: 100vh;
+  font-family: outfit;
+  text-align: center;
+  background-color: var(--light-slate);
+}
+
+main {
   display: flex;
+  height: 100%;
   justify-content: center;
   align-items: center;
-  width: 100vw;
-  height: 100vh;
-  background-color: var(--light-slate);
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+h2 {
+  margin: 1rem 0;
+  color: var(--dark-slate);
+}
+
+p {
+  color: var(--med-slate);
+  size: 0.938rem;
+  margin-bottom: 1.5rem;
+}
+
+.text-content {
+  width: 85%;
 }
