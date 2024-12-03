@@ -1,0 +1,14 @@
+:root {
+  --light-slate: hsl(212, 45%, 89%);
+  --med-slate: hsl(216, 15%, 48%);
+  --dark-slate: hsl(218, 44%, 22%);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--light-slate);
+}
